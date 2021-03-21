@@ -1,18 +1,28 @@
 package com.spartronics4915.frc.subsystems;
 
-import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import com.spartronics4915.lib.subsystems.SpartronicsSubsystem;
 
 /**
  * Detailed description of ExampleSubsystem.
  */
-public class ExampleSubsystem extends SubsystemBase
+public class ExampleSubsystem extends SpartronicsSubsystem
 {
     // The subsystem's hardware is defined here...
 
     /** Creates a new ExampleSubsystem. */
     public ExampleSubsystem()
     {
-        // ...and constructed here.
+        boolean success = true;
+        try
+        {
+            // ...and constructed here.
+        }
+        catch (Exception exception)
+        {
+            logException("Could not construct hardware: ", exception);
+            success = false;
+        }
+        logInitialized(success);
     }
 
     // Subsystem methods - actions the robot can take - should be placed here.
