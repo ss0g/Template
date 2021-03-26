@@ -3,6 +3,9 @@
     "editor.formatOnPaste": false,
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.server.launchMode": "Standard",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
