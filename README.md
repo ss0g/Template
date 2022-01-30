@@ -16,7 +16,7 @@ After creating the new season's codebase, the following four changes must be mad
 Additionally, the following steps are advised:
 
 - Copy the contents of `SpartronicsLib` into the new codebase to facilitate [simultaneous development](https://github.com/Spartronics4915/SpartronicsLib#for-spartronics).
-  - This will override the Jitpack setup, so no need to do anything there.
+  - This is *supposed to override the Jitpack setup* according to the readme. However in January 2022 we had lots of problems which were only fixed by [commenting out the relevant line](https://github.com/Spartronics4915/2022-RapidReact/pull/13/commits/9b848200e6674af072162fb709eed7c50c09c58f), so apparently **you need to comment out the implementation of SpartronicsLib**. Jitpack is not maintained currently *(1.30.2022)*.
 - Update vendor dependencies (the WPILib extension provides an option for this).
 - Remove this "Setup" section from the README.
 
